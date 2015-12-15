@@ -11,9 +11,7 @@ class WindowsProcessesImpl : public ProcessesImpl
 	public:
 		WindowsProcessesImpl();
 		virtual ~WindowsProcessesImpl();
-
 		virtual	int Scan();
-
 	private:
 		void ScanProcess();
 		void PrintProcessNameAndID(DWORD processID);

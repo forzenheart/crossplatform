@@ -10,6 +10,7 @@ class ProcessesImpl
 		{};
 		virtual ~ProcessesImpl()
 		{};
+
 		virtual	int Scan() const = 0;
 		int GetCount() const;
 		const char* GetName(const int which) const;
