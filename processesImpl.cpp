@@ -1,8 +1,5 @@
 #include "processesImpl.h"
 
-ProcessesImpl::ProcessesImpl()
-{}
-
 int
 ProcessesImpl::GetCount() const
 {
@@ -12,5 +9,11 @@ ProcessesImpl::GetCount() const
 int
 ProcessesImpl::GetPID(const int which) const
 {
-	return -1;
+	return m_processList[which].GetPid();
+}
+
+const std::string
+ProcessesImpl::GetName(const int which) const
+{
+	return m_processList[which].GetName();
 }

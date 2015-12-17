@@ -9,9 +9,10 @@
 class WindowsProcessesImpl : public ProcessesImpl
 {
 	public:
-		WindowsProcessesImpl();
-		virtual ~WindowsProcessesImpl();
-
+		WindowsProcessesImpl()
+		{}
+		virtual ~WindowsProcessesImpl()
+		{} 
 		virtual	int Scan();
 
 	private:

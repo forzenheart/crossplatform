@@ -1,9 +1,10 @@
 #ifndef	_PROCESSLIST_H__
 #define _PROCESSLIST_H__
 #include <string>
+#include "processesFactory.h"
 
 class ProcessList {
-	ProcessesFactory	m_processesImpl;
+	ProcessesImpl	*m_processesImpl;
 	public:
 		ProcessList();
 		int	Scan()  const;	

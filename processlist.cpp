@@ -4,16 +4,17 @@
 ProcessList::ProcessList()
 	:m_processesImpl(NULL)
 {
-	ProcessesFactory *factory = ProcessesFactory::GetProcessFactory();
+	ProcessesFactory *factory = ProcessesFactory::GetProcessesFactory();
+	//It make the difference between the platform
 	if (factory)
-		m_processesImpl = factory->MakeProcesses();
+		m_processesImpl = factory->MakeProcess();
 }
 
 int
 ProcessList::Scan() const
 {
 	if (m_processesImpl)
-		return m_processesImpl->GetCount;
+		return m_processesImpl->GetCount();
 	return -1;
 }
 

@@ -1,21 +1,18 @@
-#ifndef	_WINDOWSPROCESSESIMPL_H__
-#define	_WINDOWSPROCESSESIMPL_H__
+#ifndef	_LINUXPROCESSESIMPL_H__
+#define	_LINUXPROCESSESIMPL_H__
 
 #include "../processesImpl.h"
-#include <windows.h>
-#include <stdio.h>
-#include <tchar.h>
+#include <dirent.h>
 
-class WindowsProcessesImpl : public ProcessesImpl
+class LinuxProcessImpl : public ProcessesImpl
 {
 	public:
-		WindowsProcessesImpl();
-		virtual ~WindowsProcessesImpl();
+		LinuxProcessImpl()
+		{}
+		virtual ~LinuxProcessImpl()
+		{}
 		virtual	int Scan();
-	private:
-		void ScanProcess();
-		void PrintProcessNameAndID(DWORD processID);
 };
 
-#endif //_WINDOWSPROCESSESIMPL_H__
+#endif //_LINUXSPROCESSESIMPL_H__
 

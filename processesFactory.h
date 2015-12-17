@@ -1,8 +1,8 @@
 #ifndef	_PROCESSFACTORY_H__
 #define	_PROCESSFACTORY_H__
-#incldue "processesImpl.h"
+#include "processesImpl.h"
 
-class processesFactory
+class ProcessesFactory
 {
 	public:
 		virtual ~ProcessesFactory()

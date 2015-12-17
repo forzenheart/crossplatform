@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GCC	makefile	/^GCC = g++ $/;"	m
+GetCount	processesImpl.cpp	/^ProcessesImpl::GetCount() const$/;"	f	class:ProcessesImpl
+GetCount	processlist.cpp	/^ProcessList::GetCount()  const$/;"	f	class:ProcessList
+GetFactoryInstance	linux/linuxfactory.h	/^		static LinuxFactory* GetFactoryInstance()$/;"	f	class:LinuxFactory
+GetFactoryInstance	windows/windowsfactory.h	/^		static WindowsFactory* GetFactoryInstance()$/;"	f	class:WindowsFactory
+GetName	processes.cpp	/^Process::GetName() const$/;"	f	class:Process
+GetName	processesImpl.cpp	/^ProcessesImpl::GetName(const int which) const$/;"	f	class:ProcessesImpl
+GetName	processlist.cpp	/^ProcessList::GetName(const int i)  const$/;"	f	class:ProcessList
+GetPID	processesImpl.cpp	/^ProcessesImpl::GetPID(const int which) const$/;"	f	class:ProcessesImpl
+GetPID	processlist.cpp	/^ProcessList::GetPID(const int i)  const$/;"	f	class:ProcessList
+GetProcessesFactory	processesFactory.cpp	/^ProcessesFactory::GetProcessesFactory()$/;"	f	class:ProcessesFactory
+LinuxFactory	linux/linuxfactory.h	/^class LinuxFactory : public ProcessesFactory$/;"	c
+LinuxProcessImpl	linux/linuxprocessesimpl.h	/^		LinuxProcessImpl()$/;"	f	class:LinuxProcessImpl
+LinuxProcessImpl	linux/linuxprocessesimpl.h	/^class LinuxProcessImpl : public ProcessesImpl$/;"	c
+MakeProcesses	linux/linuxfactory.cpp	/^LinuxFactory::MakeProcesses()$/;"	f	class:LinuxFactory
+MakeProcesses	windows/windowsfactory.cpp	/^WindowsFactory::MakeProcesses()$/;"	f	class:WindowsFactory
+Platform	makefile	/^Platform = HAVE_LINUX$/;"	m
+PrintProcessNameAndID	windows/windowsprocessesimpl.cpp	/^WindowsProcessesImpl::PrintProcessNameAndID(DWORD processID)$/;"	f	class:WindowsProcessesImpl
+Process	processes.h	/^class	Process {$/;"	c
+ProcessList	processlist.cpp	/^ProcessList::ProcessList()$/;"	f	class:ProcessList
+ProcessList	processlist.h	/^class ProcessList {$/;"	c
+ProcessesFactory	processesFactory.h	/^class ProcessesFactory$/;"	c
+ProcessesImpl	processesImpl.h	/^		ProcessesImpl()$/;"	f	class:ProcessesImpl
+ProcessesImpl	processesImpl.h	/^class ProcessesImpl $/;"	c
+Scan	linux/linuxprocessesimpl.cpp	/^LinuxProcessImpl::Scan()$/;"	f	class:LinuxProcessImpl
+Scan	processlist.cpp	/^ProcessList::Scan() const$/;"	f	class:ProcessList
+Scan	windows/windowsprocessesimpl.cpp	/^WindowsProcessesImpl::Scan()$/;"	f	class:WindowsProcessesImpl
+ScanProcess	windows/windowsprocessesimpl.cpp	/^void WindowsProcessesImpl::ScanProcess()$/;"	f	class:WindowsProcessesImpl
+SetName	processes.cpp	/^Process::SetName(const std::string name)$/;"	f	class:Process
+SetPid	processes.cpp	/^Process::SetPid(int pid)$/;"	f	class:Process
+WindowsFactory	windows/windowsfactory.h	/^class WindowsFactory : public ProcessesFactory$/;"	c
+WindowsProcessesImpl	windows/windowsprocessesimpl.h	/^		WindowsProcessesImpl()$/;"	f	class:WindowsProcessesImpl
+WindowsProcessesImpl	windows/windowsprocessesimpl.h	/^class WindowsProcessesImpl : public ProcessesImpl$/;"	c
+_LINUXPROCESSESIMPL_H__	linux/linuxprocessesimpl.h	2;"	d
+_LINUX_FACTORY_H__	linux/linuxfactory.h	2;"	d
+_PROCESSES_H__	processes.h	2;"	d
+_PROCESSES_IMPL_H__	processesImpl.h	2;"	d
+_PROCESSFACTORY_H__	processesFactory.h	2;"	d
+_PROCESSLIST_H__	processlist.h	2;"	d
+_WINDOWSPROCESSESIMPL_H__	windows/windowsprocessesimpl.h	2;"	d
+_WINDOWS_FACTORY_H__	windows/windowsfactory.h	2;"	d
+m_name	processes.h	/^		const char *	m_name;$/;"	m	class:Process
+m_pid	processes.h	/^		int	m_pid;$/;"	m	class:Process
+m_processList	processesImpl.h	/^		std::vector<Process> m_processList;$/;"	m	class:ProcessesImpl
+m_processesImpl	processlist.h	/^	ProcessesImpl	*m_processesImpl;$/;"	m	class:ProcessList
+main	main.cpp	/^main(void)$/;"	f
+objects	makefile	/^objects = main.o processlist.o processesFactory.o \\$/;"	m
+~LinuxProcessImpl	linux/linuxprocessesimpl.h	/^		virtual ~LinuxProcessImpl()$/;"	f	class:LinuxProcessImpl
+~ProcessesFactory	processesFactory.h	/^		virtual ~ProcessesFactory()$/;"	f	class:ProcessesFactory
+~ProcessesImpl	processesImpl.h	/^		virtual ~ProcessesImpl()$/;"	f	class:ProcessesImpl
+~WindowsProcessesImpl	windows/windowsprocessesimpl.h	/^		virtual ~WindowsProcessesImpl()$/;"	f	class:WindowsProcessesImpl
